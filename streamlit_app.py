@@ -1,6 +1,6 @@
 import streamlit
 
-streamlit.title("My Mom's New Healthy Diner")
+streamlit.title("My Olive's New Healthy Diner")
 
 streamlit.header('Breakfast Favorites')
 streamlit.text('🥣 Omega 3 Blueberry Oatmeal')
@@ -42,8 +42,4 @@ my_cur.execute("SELECT CURRENT_USER(), CURRENT_ACCOUNT(), CURRENT_REGION()")
 my_data_row = my_cur.fetchone()
 streamlit.text("Hello from Snowflake:")
 streamlit.text(my_data_row)
-
-streamlit.text("Olive")
-my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
-streamlit.write('The user entered ', fruit_choice)
 
